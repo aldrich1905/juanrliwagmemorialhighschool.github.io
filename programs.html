@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juan R. Liwag Memorial High School</title>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jrl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="home.html"><img src="logo.png" width="150" height="150"></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></></i>
+        </nav>
+        <h1>Our Programs</h1>
+        
+    </section>
+    
+  <!---programs--->
+    
+    <section class="programs">
+    <h1>Special Programs We offer</h1>
+    <p>Juan R. Liwag Memorial High has multiple programs that you can join.</p>
+    
+    <div class="row">
+    
+    <div class="progsoffer">
+        <h3>SPSTE</h3>
+        <p>A special program for the development of Science, Mathematics and Research in Special Science Class (SSC).</p>
+        <img src="ste.JPG" style="margin-top: 70px;" alt="JRLMHS SPSTE">
+    </div>
+    <div class="progsoffer">
+        <h3>SPA</h3>
+        <p>A special program for the development for high school students with potential or talents in the Arts.</p>
+        <img src="spa.JPG" height="120px" style="margin-top: 70px;" class="spa" alt="JRLMHS SPA">
+    </div>
+    <div class="progsoffer">
+        <h3>SPJ</h3>
+        <p>A special program that develops learners with a talent in in writing and broadcasting.</p>
+        <img src="spj.JPG" style="margin-top: 92px;" alt="JRLMHS SPJ">
+    </div>
+    <div class="progsoffer">
+        <h3>SPS</h3>
+        <p>A special program for the development of learners with potential and talent in Sports.</p>
+        <img src="sps.jpg" style="margin-top: 115px;" alt="JRLMHS SPS">
+    </div>
+    <div class="progsoffer">
+        <h3>SPED</h3>
+        <p>A special program that educates children in a way that accommodates their individual differences, disabilities and special needs.</p>
+        <img src="sped.JPG" style="margin-top: 25px;" alt="JRLMHS SPED">
+    </div>
+    <div class="progsoffer">
+        <h3>SPFL</h3>
+        <p>A special program that enhances learners' foreign language skills.</p>
+        <img src="spfl.JPG" style="margin-top: 136px;" alt="JRLMHS SPFL">
+    </div>   
+        
+    </div>
+    
+</section>
+        
+<!---FOOTER--->
+    
+<section class="footer">
+    <p>©Tour to Juan R. Liwag Memorial High School by Group 5 and 6.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-phone"></i>
+    </div>
+</section>    
+    
+<script>
+    
+    var navlinks = document.getElementById("navlinks")
+    
+    function showMenu(){
+        navlinks.style.right = "0"
+    }
+    
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+    
+    
+    
+</script>    
+    
+</body>
+</html>

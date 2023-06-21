@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(gatebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative
+}
+
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16.5px;
+    font-family: arial;
+}
+
+.navlinks ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #6eb7d0;
+    position: absolute;
+    transition: 0.9s;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 52px;
+    font-family: arial black;
+    font-weight: bold;
+}
+
+.textbox p{
+    margin: 20px 0 40px;
+    font-size: 35px;
+    color: #6eb7d0;
+    font-style: italic;
+    
+}
+
+.visitbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 16.5px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    font-family: arial black;
+}
+
+.visitbtn:hover{
+    border: 1px solid #6eb7d0;
+    background: #6eb7d0;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .textbox h1{
+        font-size: 25px;
+    }
+    
+    .textbox p{
+        font-size: 20px;
+    }
+    
+    .navlinks ul li{
+        display: block;
+    }
+    
+    .navlinks{
+        position: fixed;
+        background: #6eb7d0;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-size: 25px;
+        transition: 1.3s;
+    }
+    
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .navlinks ul{
+        padding: 45px; 
+    }
+    
+    .header img{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+}
+
+/*---programs---*/
+
+.programs{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.programs h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: arial black;
+}
+
+.programs p{
+    color: #7a7a7a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: arial;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progsoffer{
+    flex-basis: 31%;
+    background: #ddf0f6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px 17px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 1s;
+    cursor: pointer;
+    padding-bottom: 80px;;
+}
+.progsoffer h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: arial black;
+}
+
+.progsoffer:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+    
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    
+    
+}
+
+/*----SCHOOL---*/
+
+.school{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.school h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: arial black;
+}
+
+.school p{
+    color: #7a7a7a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: arial;
+}
+
+.schoolcol{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(110,183,208,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    font-family: arial black;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----call----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(gatebg.jpg);
+    background: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    font-size: 40px;
+    color: white;
+    font-family: arial black;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 25px;
+    }
+}
+
+/*---footer---*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #6eb7d0;
+    cursor: default;
+}
+
+.footer p{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: arial;
+    color: white;
+}
+
+.icons .fa{
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding 18px 0;
+    margin-top: 20px;
+}
+
+.icons .fa:hover{
+    color: darkblue;
+}
+
+@media(max-width: 700px){
+    .footer p{
+        font-size: 15px;
+    }
+}
+
+/*--ABOUT US PAGE---*/
+
+.subheader{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(love.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.subheader h1{
+    font-size: 50px;
+    font-family: arial black;
+    transform: translateY(-80%);
+}
+
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.aboutcol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.aboutcol img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.aboutcol p{
+    font-size: 18px;
+    font-family: arial;
+}
+
+.aboutcol h1{
+    font-size: 50px;
+}
+
+@media(max-width: 700px){
+   
+    
+    .aboutcol h1{
+        font-size: 30px;
+    }
+    
+    .aboutcol p{
+        font-size: 15px;
+    }
+    
+    .subheader img{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    
+    .subheader h1{
+        font-size: 35px;
+        transform: translateY(30%);
+    }
+    
+    .gt{
+        transform: translateY(-25%);
+    }
+}
+
+.progsoffer img{
+    width: 100%;
+}
+
+@media(max-width: 700px){
+    .spa{
+        height: 260px;
+    }
+    
+    .programs h1{
+        font-size: 30px;
+    }
+}
+
+/*---contact page---*/
+
+.sendbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #555;
+    padding: 12px 34px;
+    font-size: 16.5px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    font-family: arial black;
+}
+
+.sendbtn:hover{
+    border: 1px solid #6eb7d0;
+    background: #6eb7d0;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contactus{
+    width: 80%;
+    margin: auto;
+}
+
+.contactcol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contactcol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 120px;
+}
+
+.contactcol div .fa{
+    font-size: 28px;
+    color: #6eb7d0;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contactcol div p{
+    padding: 0;
+    font-family: arial;
+    color: #7a7a7a;
+}
+
+.contactcol div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: arial black;
+    font-weight: 500;
+    color: #555
+}
+
+.contactcol input, .contactcol textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+@media(max-width: 700px){
+    .contactcol div{
+        margin-left: 3px;
+    }
+    
+    .contactcol div p{
+        font-size: 10px;
+    }
+    
+    .contactcol div h5{
+        font-size: 12px;
+    }
+    
+    .contactcol{
+        margin-left: 5px;
+    }
+}
+
+.nextprev{
+    display: inline-block;
+    justify-content: space-between;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juan R. Liwag Memorial High School</title>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jrl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="home.html"><img src="logo.png" width="150" height="150"></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></></i>
+        </nav>
+        <h1>Our School's Facilities</h1>
+        
+    </section>
+    
+  <!---facilities--->
+    
+    <section class="programs" style="padding-bottom: 0;">
+    <h1>Senior High School</h1>
+    <p>Juan R. Liwag Memorial High school - Senior High school aims to prepare the JRlians before entering college, equipping them with global skills, competencies, and knowledge needed to achieve successful career paths in the future. With many strands to choose from, from STEM, ABM, HUMMS, and TVL, JRlians continue to reach for the stars even in senior high!</p>
+    
+    <div class="row">
+    
+    <div class="progsoffer">
+        <h3>STEM</h3>
+        <img src="stem.jpg" alt="STEM Building">
+    </div>
+    <div class="progsoffer">
+        <h3>HUMSS</h3>
+        <img src="humss.jpg" alt="HUMSS Building">
+    </div>
+    <div class="progsoffer">
+        <h3>ABM</h3>
+        <img src="abm.jpg" alt="ABM Building">
+    </div>  
+    <div class="progsoffer">
+        <h3>TVL</h3>
+        <img src="tvl.jpg" alt="TVL Building">
+    </div>
+        
+    </div>
+    
+       </div>
+    <div class="nextprev">
+       <a href="facilities5.html" class="sendbtn" style="transform: translateY(-20%);">Prev</a>
+        <a href="home.html" class="sendbtn" style="transform: translateY(-20%);">Next</a>
+        </div>
+    </section>
+    
+        
+<!---FOOTER--->
+    
+<section class="footer">
+    <p>©Tour to Juan R. Liwag Memorial High School by Group 5 and 6.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-phone"></i>
+    </div>
+</section>    
+    
+<script>
+    
+    var navlinks = document.getElementById("navlinks")
+    
+    function showMenu(){
+        navlinks.style.right = "0"
+    }
+    
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+    
+    
+    
+</script>    
+    
+</body>
+</html>

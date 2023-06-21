@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juan R. Liwag Memorial High School</title>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jrl.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="home.html"><img src="logo.png" width="150" height="150"></a>
+            <div class="navlinks" id="navlinks">
+                <i class="fa fa-times" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></></i>
+        </nav>
+        <h1>About Us</h1>
+        
+    </section>
+    
+    <!---ABOUT US CONTENT--->
+
+<section class="aboutus">
+    <div class="row">
+        <div class="aboutcol">
+            <h1>Juan R. Liwag Memorial High School</h1>
+            <p>Established in 1945, Juan R. Liwag Memorial High School, is one of the biggest public high schools in the province of Nueva Ecija as it has more than 5,000 students and has the highest student population in the fourth congressional district. Juan R. Liwag Memorial Highschool was formerly known as Gapan Municipal High School from 1946-1952, Nueva Ecija South High school (NESHS) 1952-1972, Gapan National High school (GNHS) from 1972-1984 and from 1984 to the current date today is known as Juan R. Liwag Memorial High school (JRLMHS). Juan R. Liwag provides its students special programs and quality education at its finest since 1945. 
+            The motto of Juan R. Liwag is Per as per ad astra, "through hardship to the stars." These words encourage the students to work hard for the goals and achievements they wish to attain as Liwag guides them in their journey. Juan R. Liwag Memorial High school truly lies in the heart of Gapan, giving light and hope to the students with passions and dreams in their futures ahead.</p>
+        </div>
+        <div class="aboutcol">
+            <img src="gate.jpg" alt="Juan R. Liwag Memorial High School" class="gt">
+        </div>
+    </div>
+</section>
+    
+<!---FOOTER--->
+    
+<section class="footer">
+    <p>©Tour to Juan R. Liwag Memorial High School by Group 5 and 6.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-phone"></i>
+    </div>
+</section>    
+    
+<script>
+    
+    var navlinks = document.getElementById("navlinks")
+    
+    function showMenu(){
+        navlinks.style.right = "0"
+    }
+    
+    function hideMenu(){
+        navlinks.style.right = "-200px"
+    }
+    
+    
+    
+</script>    
+    
+</body>
+</html>
